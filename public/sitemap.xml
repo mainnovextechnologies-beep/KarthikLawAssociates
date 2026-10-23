@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Replace YOUR-PRODUCTION-DOMAIN with the deployed canonical domain before launch. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-PRODUCTION-DOMAIN/</loc></url>
+  <url><loc>https://karthik-law-associates.vercel.app/</loc></url>
 </urlset>
