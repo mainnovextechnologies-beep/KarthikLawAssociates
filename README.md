@@ -1,51 +1,39 @@
-# Karthik Advocate — React + Vite website
+# Karthik Advocate — React + Vite
 
-Premium responsive demo website for Karthik Advocate, Nellore, Andhra Pradesh.
-
-## Requirements
-- Node.js 18+
-- npm
+Premium responsive one-page legal website for Karthik Advocate, Nellore, Andhra Pradesh.
 
 ## Run locally
+
 ```bash
 npm install
-cp .env.example .env
 npm run dev
-```
-On Windows PowerShell, copy the example with:
-```powershell
-Copy-Item .env.example .env
 ```
 
 ## Production build
-Set `VITE_SITE_URL` in `.env` to the final canonical HTTPS domain, then run:
+
 ```bash
 npm run build
 npm run preview
 ```
-The prebuild script creates `public/sitemap.xml` and `public/robots.txt` from the actual route list and `VITE_SITE_URL`. The files are copied into `dist/` by Vite. Do not deploy with `https://your-domain.com` still configured.
 
-## Demo safety
-`VITE_DEMO_MODE=true` is intentional. Call and WhatsApp controls show demo notices, and the appointment form only validates locally. No form information is sent to a server. Do not switch demo mode off until verified contact details and secure backend functionality have been configured and tested.
+## Before publishing
 
-## Configure before launch
-- `VITE_SITE_URL`: final production domain
-- `VITE_PHONE`: verified phone number in international format for `tel:`
-- `VITE_WHATSAPP`: verified digits including country code, e.g. `91...` (digits only recommended)
-- `VITE_EMAIL`: verified office email (not used by the demo frontend)
-- `VITE_GOOGLE_BUSINESS_URL`: verified Google Business Profile/reviews URL
+1. Replace `YOUR-PRODUCTION-DOMAIN` in `index.html`/JSON-LD in `src/main.jsx`, `public/sitemap.xml`, and `public/robots.txt` with the actual deployed domain.
+2. Verify the Google Maps pin and that the supplied review excerpts belong to the intended business listing. Remove any unverified review before publishing.
+3. Confirm which practice areas are actually offered; the website currently labels them as enquiry categories and asks visitors to confirm availability.
+4. Confirm the supplied portrait is approved for public use and that the phone number/address are correct.
+5. The enquiry form validates input and opens WhatsApp with a prefilled message. It does not submit to a backend or store leads on a server; the visitor must press Send in WhatsApp. For server-side lead storage, connect a secure form backend/CRM.
+6. Confirm business hours before adding them; this site does not claim 24-hour availability.
+7. Review all website content for compliance with applicable professional conduct rules before launch.
 
-Also confirm practice areas, rating/review count, office hours, exact map pin, photo authorization, qualifications and Bar enrollment details with the advocate. The current portrait is the image supplied with the project.
-
-## SEO notes
-- Unique page titles/descriptions and canonical metadata are included.
-- `LegalService` JSON-LD uses only the supplied business name and address; verify details before launch.
-- Sitemap includes the current public routes. Keep the script route list synchronized with actual routes.
-- `robots.txt` points to the configured sitemap.
-- React Router is a client-side SPA. For strongest crawlability, consider prerendering/SSR or static generation of important routes before production.
-- Submit the deployed sitemap in Google Search Console. A sitemap helps discovery but cannot guarantee indexing or rankings.
-- Appointment page is included in the sitemap by default; remove it from the route list if you decide it should not be indexed.
-- The demo does not claim Google reviews are embedded; the reported 5.0 rating / 7 reviews must be reverified and the official listing URL added before launch.
-
-## Deployment
-Works with static hosting such as Vercel, Netlify or Cloudflare Pages. Use `npm run build`; publish `dist/`. Configure SPA fallback rewrites to `/index.html` for direct navigation to nested React Router URLs. The generated sitemap and robots file are static assets.
+## Included
+- Responsive React + Vite site
+- Premium legal navy/gold visual system
+- Supplied portrait and MA Innovex Technologies logo
+- Custom law-themed SVG favicon
+- Call, WhatsApp, Google Maps, directions and copy-address actions
+- Validated enquiry form that opens WhatsApp
+- Review excerpts section with verification caveat
+- FAQs, legal disclaimer and privacy information dialogs
+- SEO title, description, JSON-LD starter, robots.txt and sitemap.xml
+- Footer developer credit linking to MA Innovex Technologies

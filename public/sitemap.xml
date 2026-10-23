@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://your-domain.com/</loc><image:image><image:loc>https://your-domain.com/images/karthik-advocate.png</image:loc><image:title>Karthik Advocate professional portrait</image:title></image:image></url>
-  <url><loc>https://your-domain.com/about</loc></url>
-  <url><loc>https://your-domain.com/legal-services</loc></url>
-  <url><loc>https://your-domain.com/legal-services/civil-rights</loc></url>
-  <url><loc>https://your-domain.com/legal-services/criminal-defence</loc></url>
-  <url><loc>https://your-domain.com/legal-services/disability-benefits</loc></url>
-  <url><loc>https://your-domain.com/legal-services/eviction</loc></url>
-  <url><loc>https://your-domain.com/legal-services/landlord-tenant</loc></url>
-  <url><loc>https://your-domain.com/legal-services/traffic-tickets</loc></url>
-  <url><loc>https://your-domain.com/legal-services/will-writing</loc></url>
-  <url><loc>https://your-domain.com/legal-services/workers-compensation</loc></url>
-  <url><loc>https://your-domain.com/gallery</loc><image:image><image:loc>https://your-domain.com/images/karthik-advocate.png</image:loc><image:title>Karthik Advocate professional portrait</image:title></image:image></url>
-  <url><loc>https://your-domain.com/reviews</loc></url>
-  <url><loc>https://your-domain.com/faq</loc></url>
-  <url><loc>https://your-domain.com/contact</loc></url>
-  <url><loc>https://your-domain.com/appointment</loc></url>
-  <url><loc>https://your-domain.com/privacy-policy</loc></url>
-  <url><loc>https://your-domain.com/terms</loc></url>
-  <url><loc>https://your-domain.com/legal-disclaimer</loc></url>
+<!-- Replace YOUR-PRODUCTION-DOMAIN with the deployed canonical domain before launch. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-PRODUCTION-DOMAIN/</loc></url>
 </urlset>
