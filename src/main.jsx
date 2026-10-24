@@ -1049,7 +1049,7 @@ function App() {
               addressCountry: 'IN'
             },
             areaServed: { "@type": "City", name: "Nellore" },
-            url: "https://YOUR-PRODUCTION-DOMAIN/",
+            url: "https://karthik-law-associates.vercel.app/",
           }),
         }}
       />
