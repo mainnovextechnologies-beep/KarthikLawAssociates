@@ -717,14 +717,20 @@ function App() {
                   <MapPin size={16} /> Get directions in Google Maps{" "}
                   <ArrowUpRight size={15} />
                 </a>
+
                 <div className="map-wrap">
                   <iframe
-                    title="Search Karthik Advocate office in Nellore on Google Maps"
-                    src="https://maps.google.com/maps?q=14.436001777648926%2C79.97120666503906&z=17&hl=en"
+                    title="Karthik Advocate Office, Nellore - Google Maps"
+                    src="https://maps.google.com/maps?output=embed&q=14.436001777648926%2C79.97120666503906&z=17"
+                    width="100%"
+                    height="400"
+                    style={{ border: 0 }}
                     loading="lazy"
+                    allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"
                   />
                 </div>
+
                 <p className="map-note">
                   Please verify the map pin and address before visiting.
                 </p>
