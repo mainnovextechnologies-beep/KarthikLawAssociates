@@ -720,7 +720,7 @@ function App() {
                 <div className="map-wrap">
                   <iframe
                     title="Search Karthik Advocate office in Nellore on Google Maps"
-                    src="https://maps.app.goo.gl/SUGhcpTJucszreFRA"
+                    src="https://maps.google.com/maps?q=14.436001777648926%2C79.97120666503906&z=17&hl=en"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
